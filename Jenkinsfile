@@ -39,7 +39,7 @@ pipeline {
            //docker.withRegistry('https://gcr.io','gcr:gcr'){
            //   appimage.push("${env.BUILD_ID}")
            //}
-         }
+         //}
        }
       }
     
