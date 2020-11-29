@@ -32,7 +32,7 @@ pipeline {
         script {
            appimage = docker.build( "adradaleon0123/devops:${env.BUILD_ID}")
            //appimage = docker.build("gcr.io/devops-288814/devops:${env.BUILD_ID}")
-           docker.withRegistry("https://registry.hub.docker.com",'docker-hub-credentials') 
+         docker.withRegistry("https://registry.hub.docker.com",'docker-hub-credentials') {
            //docker.withRegistry('https://gcr.io','gcr:gcr'){
               appimage.push("${env.BUILD_ID}")
            }
