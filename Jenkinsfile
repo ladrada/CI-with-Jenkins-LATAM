@@ -6,7 +6,7 @@ pipeline {
     PROJECT_ID = "adradaleon0123"
     CLUSTER_NAME = 'cr-k8s'
     LOCATION = 'southamerica-east1-a'
-    CREDENTIALS_ID = 'gcr'
+    CREDENTIALS_ID = 'gke'
   }   
  stages {
      stage('Checkout SCM') {
